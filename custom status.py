@@ -1,5 +1,3 @@
-import json
-import aiofiles
 from nextcord import channel, guild, user, webhook
 from nextcord import message
 from nextcord import Interaction, SlashOption, ChannelType
