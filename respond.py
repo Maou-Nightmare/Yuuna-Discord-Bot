@@ -21,4 +21,4 @@ async def ping(ctx):
     await ctx.send(f"Pong! {user.mention}")
 
     
-client.run(TOKEN)
+client.run("INSERT YOUR BOT TOKEN HERE")
