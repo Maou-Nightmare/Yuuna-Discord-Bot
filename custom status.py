@@ -12,6 +12,9 @@ from random import choice
 import os, platform
 
 
+client = nextcord.Client()
+intents = nextcord.Intents.all()
+client = commands.Bot(command_prefix = "yu!", help_command=None, case_insensitive=True, intents=intents)
 
 
 @client.event
