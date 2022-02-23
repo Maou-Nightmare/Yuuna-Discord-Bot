@@ -12,18 +12,18 @@ import os, platform
 
 client = nextcord.Client()
 intents = nextcord.Intents.all()
-client = commands.Bot(command_prefix = "yu!", help_command=None, case_insensitive=True, intents=intents)
+client = commands.Bot(command_prefix = "INSERT PREFIX HERE", help_command=None, case_insensitive=True, intents=intents)
 
 
 @client.event
 async def on_ready():  
-  await client.change_presence(status=nextcord.Status.online, activity=nextcord.Activity(type=nextcord.ActivityType.watching, name="weebcity.club | Yuuna stable version 1.0"))
+  await client.change_presence(status=nextcord.Status.online, activity=nextcord.Activity(type=nextcord.ActivityType.watching, name="INSERT STATUS HERE"))
   print(" {0.user} has logged in successfully".format(client))
   
   async def ch_pr():
   await client.wait_until_ready()
 
-  statuses = ["All of my beautiful Users >:3 | Yuuna stable version 1.0 ", "weebcity.club | Yuuna stable version 1.0", "yu!commands | Yuuna stable version 1.0"]
+  statuses = ["STATUS 1", "STATUS 2", "STATUS 3"]
 
   while not client.is_closed():
 
@@ -38,4 +38,4 @@ client.loop.create_task(ch_pr())
 
 
 
-client.run(TOKEN)
+client.run("INSERT YOUR BOT TOKEN HERE")
