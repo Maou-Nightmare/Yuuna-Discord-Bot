@@ -2,6 +2,7 @@ import nextcord
 
 
 client = nextcord.Client()
+client = commands.Bot(command_prefix = "INSERT BOT PREFIX HERE")
 
 @client.event
 async def on_ready():
@@ -18,3 +19,6 @@ async def ping(ctx):
  async def ping(ctx):
     user= ctx.author.mention
     await ctx.send(f"Pong! {user.mention}")
+
+    
+client.run(TOKEN)
