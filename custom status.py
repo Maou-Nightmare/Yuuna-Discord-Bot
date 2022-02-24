@@ -2,7 +2,7 @@ from nextcord import channel, guild, user, webhook
 from nextcord import message
 from nextcord import Interaction, SlashOption, ChannelType
 from nextcord.abc import GuildChannel
-import nextcord
+
 from nextcord.ext import tasks
 from nextcord.ext import commands
 from nextcord.ext.commands import has_permissions, MissingPermissions
