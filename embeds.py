@@ -14,7 +14,7 @@ client = commands.Bot(command_prefix = "INSERT PREFIX HERE")
 async def embed(ctx):
   em= nextcord.Embed(
     title = "EMBED TITLE",
-    color= nextcord.Color.red,      #You can either set nextcord.Color.random, nextcord.Color.red/blue/green or use a hexcode fr
+    color= nextcord.Color.red,      #You can either set nextcord.Color.random, nextcord.Color.red/blue/green or use a hexcode
     description= "EMBED DESCRIPTION"
   )
   em.set_footer(
